@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1FB428064147006B07C2 /* TopNavView.swift */; };
 		FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */; };
 		FFF2EDB628060C3800988B44 /* BirdCamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB528060C3800988B44 /* BirdCamApp.swift */; };
 		FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB728060C3800988B44 /* ContentView.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2F1FB428064147006B07C2 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
+		FF2F1FB628064339006B07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTrajectoryButtonView.swift; sourceTree = "<group>"; };
 		FFF2EDB228060C3800988B44 /* BirdCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2EDB528060C3800988B44 /* BirdCamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCamApp.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		FFF2EDB428060C3800988B44 /* BirdCam */ = {
 			isa = PBXGroup;
 			children = (
+				FF2F1FB628064339006B07C2 /* Info.plist */,
 				FFF2EDCC280615E300988B44 /* Helpers */,
 				FFF2EDC92806157300988B44 /* CameraView */,
 				FFF2EDB728060C3800988B44 /* ContentView.swift */,
@@ -82,6 +86,7 @@
 			children = (
 				FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */,
 				FFF2EDC328060D1700988B44 /* CameraControls.swift */,
+				FF2F1FB428064147006B07C2 /* TopNavView.swift */,
 				FFF2EDCA2806158E00988B44 /* CameraView.swift */,
 			);
 			path = CameraView;
@@ -168,6 +173,7 @@
 				FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */,
 				FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */,
 				FFF2EDC82806104E00988B44 /* Styles.swift in Sources */,
+				FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */,
 				FFF2EDC428060D1700988B44 /* CameraControls.swift in Sources */,
 				FFF2EDCB2806158E00988B44 /* CameraView.swift in Sources */,
 				FFF2EDB628060C3800988B44 /* BirdCamApp.swift in Sources */,
@@ -302,6 +308,7 @@
 				DEVELOPMENT_TEAM = M5B635R5MU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BirdCam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +338,7 @@
 				DEVELOPMENT_TEAM = M5B635R5MU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BirdCam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

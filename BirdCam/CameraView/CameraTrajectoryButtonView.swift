@@ -21,7 +21,14 @@ enum CameraTrajectory: Int, CaseIterable, Identifiable {
     }
 
     var image: Image {
-        Image("CameraOptionButtons-Rotate")
+        switch self {
+        case .rotate:
+            return Image("CameraOptionButtons-Rotate")
+        case .travel:
+            return Image("CameraOptionButtons-Traveling")
+        case .fromTop:
+            return Image("CameraOptionButtons-FromTop")
+        }
     }
 
     func action() {}
