@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */; };
 		FFF2EDB628060C3800988B44 /* BirdCamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB528060C3800988B44 /* BirdCamApp.swift */; };
 		FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB728060C3800988B44 /* ContentView.swift */; };
 		FFF2EDBA28060C4000988B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2EDB928060C4000988B44 /* Assets.xcassets */; };
 		FFF2EDBD28060C4000988B44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2EDBC28060C4000988B44 /* Preview Assets.xcassets */; };
 		FFF2EDC428060D1700988B44 /* CameraControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDC328060D1700988B44 /* CameraControls.swift */; };
-		FFF2EDC628060EF700988B44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDC528060EF700988B44 /* Extensions.swift */; };
 		FFF2EDC82806104E00988B44 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDC72806104E00988B44 /* Styles.swift */; };
+		FFF2EDCB2806158E00988B44 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDCA2806158E00988B44 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTrajectoryButtonView.swift; sourceTree = "<group>"; };
 		FFF2EDB228060C3800988B44 /* BirdCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2EDB528060C3800988B44 /* BirdCamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCamApp.swift; sourceTree = "<group>"; };
 		FFF2EDB728060C3800988B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFF2EDB928060C4000988B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF2EDBC28060C4000988B44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFF2EDC328060D1700988B44 /* CameraControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControls.swift; sourceTree = "<group>"; };
-		FFF2EDC528060EF700988B44 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FFF2EDC72806104E00988B44 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		FFF2EDCA2806158E00988B44 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +59,12 @@
 		FFF2EDB428060C3800988B44 /* BirdCam */ = {
 			isa = PBXGroup;
 			children = (
-				FFF2EDC328060D1700988B44 /* CameraControls.swift */,
+				FFF2EDCC280615E300988B44 /* Helpers */,
+				FFF2EDC92806157300988B44 /* CameraView */,
 				FFF2EDB728060C3800988B44 /* ContentView.swift */,
 				FFF2EDB528060C3800988B44 /* BirdCamApp.swift */,
 				FFF2EDB928060C4000988B44 /* Assets.xcassets */,
 				FFF2EDBB28060C4000988B44 /* Preview Content */,
-				FFF2EDC528060EF700988B44 /* Extensions.swift */,
-				FFF2EDC72806104E00988B44 /* Styles.swift */,
 			);
 			path = BirdCam;
 			sourceTree = "<group>";
@@ -74,6 +75,24 @@
 				FFF2EDBC28060C4000988B44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFF2EDC92806157300988B44 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */,
+				FFF2EDC328060D1700988B44 /* CameraControls.swift */,
+				FFF2EDCA2806158E00988B44 /* CameraView.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		FFF2EDCC280615E300988B44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2EDC72806104E00988B44 /* Styles.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */,
 				FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */,
 				FFF2EDC82806104E00988B44 /* Styles.swift in Sources */,
 				FFF2EDC428060D1700988B44 /* CameraControls.swift in Sources */,
+				FFF2EDCB2806158E00988B44 /* CameraView.swift in Sources */,
 				FFF2EDB628060C3800988B44 /* BirdCamApp.swift in Sources */,
-				FFF2EDC628060EF700988B44 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
