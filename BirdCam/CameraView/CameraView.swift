@@ -3,18 +3,22 @@ import SwiftUI
 /* Top Nav + Camera Render View + Camera Controls */
 struct CameraView: View {
     var body: some View {
-        ZStack {
-            Color("Background")
+        ZStack(alignment: .bottom) {
+            Color("DropCloth")
                 .ignoresSafeArea()
 
-            Text("NAV STACK")
+            VStack {
+                Text("Camera")
+                    .font(.system(size: 12))
+                    .foregroundColor(.white)
 
-//            Rectangle()
-//                .frame(maxWidth: .infinity)
-//                .frame(maxHeight: .infinity)
-//                .strokeStyle()
-//
-//            CameraControls()
+                CameraControls()
+                    .background(Color("Background"))
+                    .mask(RoundedRectangle(cornerRadius: 20))
+                    .padding(8)
+
+                Spacer().frame(height: 90)
+            }
         }
         .ignoresSafeArea()
     }

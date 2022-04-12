@@ -4,18 +4,14 @@ struct CameraControls: View {
 
     var body: some View {
         VStack {
-            Text("Camera")
-                .font(.system(size: 12))
-                .foregroundColor(.white)
-
             GeometryReader { proxy in
                 // 3 cells with 2 spaces (8pts)
                 let cellWidth: CGFloat = (proxy.size.width - (8 * 2)) / 3
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         ForEach(CameraTrajectory.allCases) { trajectory in
-                            CameraTrajectoryButtonView(cameraTrajectory: trajectory)
-                                .frame(width: cellWidth, height: 134)
+                            CameraTrajectoryButtonView(cameraTrajectory: trajectory, width: cellWidth)
+                                .frame(height: 134)
                         }
                     }
                 }
@@ -23,7 +19,7 @@ struct CameraControls: View {
             .padding(8)
             .frame(height: 150)
             .background(Color("Background"))
-            .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            .mask(RoundedRectangle(cornerRadius: 20))
         }
     }
 }

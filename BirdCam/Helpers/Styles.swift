@@ -4,9 +4,9 @@ struct RoundedCornerStyle: ViewModifier {
     let cornerRadius: CGFloat
 
     func body(content: Content) -> some View {
-        content.mask(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+        content.mask(RoundedRectangle(cornerRadius: cornerRadius))
             .overlay(
-                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(lineWidth: 1)
                     .foregroundColor(Color.white.opacity(0.08))
             )
