@@ -40,6 +40,7 @@ struct CameraTrajectoryButtonView: View {
     let cameraTrajectory: CameraTrajectory
     let isSelected: Bool
     let width: CGFloat
+    let didSelect: () -> Void
 
     private var openWidth: CGFloat {
         width * 2.55
@@ -57,6 +58,7 @@ struct CameraTrajectoryButtonView: View {
                 } else {
                     appState.selectedCameraControl = cameraTrajectory
                 }
+                didSelect()
             }
         }) {
             ZStack {
@@ -117,7 +119,7 @@ struct CameraOptionButtonView_Previews: PreviewProvider {
             cameraTrajectory: .rotate,
             isSelected: false,
             width: 112
-        )
+        ) {}
         .frame(height: 134)
         .background(Color.black)
     }

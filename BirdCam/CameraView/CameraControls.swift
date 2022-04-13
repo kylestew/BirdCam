@@ -8,17 +8,30 @@ struct CameraControls: View {
             GeometryReader { proxy in
                 // 3 cells with 2 spaces (8pts)
                 let cellWidth: CGFloat = (proxy.size.width - (8 * 4)) / 3
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 8) {
-                        ForEach(CameraTrajectory.allCases) { trajectory in
-                            CameraTrajectoryButtonView(
-                                cameraTrajectory: trajectory,
-                                isSelected: appState.selectedCameraControl == trajectory,
-                                width: cellWidth)
-                            .frame(height: 134)
+                ScrollViewReader { value in
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(CameraTrajectory.allCases) { trajectory in
+                                CameraTrajectoryButtonView(
+                                    cameraTrajectory: trajectory,
+                                    isSelected: appState.selectedCameraControl == trajectory,
+                                    width: cellWidth) {
+                                        value.scrollTo(trajectory.id, anchor: .leading)
+                                    }
+                                    .frame(height: 134)
+                            }
                         }
                     }
-                    .padding(8)
+                    // this really feels like a hack :/
+                    .safeAreaInset(edge: .leading, spacing: 0) {
+                        Spacer().frame(width: 8)
+                    }
+                    .safeAreaInset(edge: .bottom, spacing: 0) {
+                        Spacer().frame(width: 4)
+                    }
+                    .safeAreaInset(edge: .top, spacing: 0) {
+                        Spacer().frame(width: 4)
+                    }
                 }
             }
             .frame(height: 150)
