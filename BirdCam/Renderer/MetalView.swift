@@ -2,6 +2,7 @@ import MetalKit
 import SwiftUI
 
 struct MetalView: UIViewRepresentable {
+    @EnvironmentObject var appState: AppState
 
     let view: MTKView
     let renderer: Renderer
@@ -24,5 +25,6 @@ struct MetalView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: MTKView, context: Context) {
+        renderer.rotationVelocity = appState.rotationVelocity
     }
 }

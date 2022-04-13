@@ -5,9 +5,9 @@ struct CameraView: View {
 
     var body: some View {
         VStack {
-            Text("rotational velocity: \(appState.rotationVelocity)")
-                .font(.system(size: 10))
-                .foregroundColor(.white)
+//            Text("rotational velocity: \(appState.rotationVelocity)")
+//                .font(.system(size: 10))
+//                .foregroundColor(.white)
 
             Spacer()
 

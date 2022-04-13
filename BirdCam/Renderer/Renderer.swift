@@ -45,7 +45,8 @@ class Renderer: NSObject {
     var meshes: [MTKMesh] = []
 
     // animation
-    var time: Float = 0
+    var rotationVelocity = 0.0
+    var angle: Float = 0.0
     let fps: Int
 
     init?(metalView: MTKView) {
@@ -159,8 +160,7 @@ extension Renderer: MTKViewDelegate {
             return
         }
 
-        time += 1 / Float(fps)
-        let angle = -time
+        angle += Float(rotationVelocity / 12.0)
         let modelMatrix = float4x4(rotationAbout: float3(0, 1, 0), by: angle)
                 * float4x4(scaleBy: 0.4)
 
