@@ -5,6 +5,10 @@ struct CameraView: View {
         VStack {
             Spacer()
 
+            RotationalSliderView()
+
+            Spacer()
+
             Text("Camera")
                 .font(.system(size: 12))
                 .foregroundColor(.white)

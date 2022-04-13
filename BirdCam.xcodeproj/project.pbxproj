@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1FB428064147006B07C2 /* TopNavView.swift */; };
+		FF41857328068DF1001A1FBA /* RotationalSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41857228068DF1001A1FBA /* RotationalSliderView.swift */; };
 		FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */; };
 		FF7C03922806757600067CC8 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7C03912806757600067CC8 /* BlobView.swift */; };
 		FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9AC9BE28066A7D003CF483 /* TabBarView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FF2F1FB428064147006B07C2 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 		FF2F1FB628064339006B07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF41857228068DF1001A1FBA /* RotationalSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationalSliderView.swift; sourceTree = "<group>"; };
 		FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTrajectoryButtonView.swift; sourceTree = "<group>"; };
 		FF7C03912806757600067CC8 /* BlobView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		FF9AC9BE28066A7D003CF483 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		FFF2EDC92806157300988B44 /* CameraView */ = {
 			isa = PBXGroup;
 			children = (
+				FF41857228068DF1001A1FBA /* RotationalSliderView.swift */,
 				FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */,
 				FFF2EDC328060D1700988B44 /* CameraControls.swift */,
 				FF2F1FB428064147006B07C2 /* TopNavView.swift */,
@@ -189,6 +192,7 @@
 			files = (
 				FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */,
 				FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */,
+				FF41857328068DF1001A1FBA /* RotationalSliderView.swift in Sources */,
 				FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */,
 				FFC5D70728066FEC000883D5 /* AppState.swift in Sources */,
 				FFF2EDC82806104E00988B44 /* Styles.swift in Sources */,
