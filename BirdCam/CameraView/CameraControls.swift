@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CameraControls: View {
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
         VStack {
@@ -10,8 +11,11 @@ struct CameraControls: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         ForEach(CameraTrajectory.allCases) { trajectory in
-                            CameraTrajectoryButtonView(cameraTrajectory: trajectory, width: cellWidth)
-                                .frame(height: 134)
+                            CameraTrajectoryButtonView(
+                                cameraTrajectory: trajectory,
+                                isSelected: appState.selectedCameraControl == trajectory,
+                                width: cellWidth)
+                            .frame(height: 134)
                         }
                     }
                     .padding(8)
@@ -34,5 +38,6 @@ struct CameraControls_Previews: PreviewProvider {
         }
         .background(Color("DropCloth"))
         .previewLayout(.fixed(width: 375, height: 300))
+        .environmentObject(AppState())
     }
 }

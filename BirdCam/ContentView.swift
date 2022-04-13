@@ -36,6 +36,7 @@ struct ContentView: View {
         }
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
+        .environmentObject(AppState())
     }
 }
 
