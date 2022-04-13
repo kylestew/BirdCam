@@ -2,11 +2,12 @@ import Foundation
 
 class AppState: ObservableObject {
 
-    // how much rotation velocity we are running
-    // based on how far user is pulling over thingy
-//    var rotationVelocity: Float
-
+    // current camera trajectory option in camera view
     @Published var selectedCameraControl: CameraTrajectory?
+
+    // rate at which model rotates - driven by thumbstick
+    // normalized to [-1.0, 1.0]
+    @Published var rotationVelocity: Double = 0.0
 
 }
 

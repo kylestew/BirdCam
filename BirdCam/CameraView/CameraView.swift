@@ -1,8 +1,14 @@
 import SwiftUI
 
 struct CameraView: View {
+    @EnvironmentObject var appState: AppState
+
     var body: some View {
         VStack {
+            Text("rotational velocity: \(appState.rotationVelocity)")
+                .font(.system(size: 10))
+                .foregroundColor(.white)
+
             Spacer()
 
             RotationalSliderView()
@@ -24,5 +30,6 @@ struct CameraView: View {
 struct CameraView_Previews: PreviewProvider {
     static var previews: some View {
         CameraView()
+            .environmentObject(AppState())
     }
 }
