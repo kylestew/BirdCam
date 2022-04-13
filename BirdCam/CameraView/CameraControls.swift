@@ -6,7 +6,7 @@ struct CameraControls: View {
         VStack {
             GeometryReader { proxy in
                 // 3 cells with 2 spaces (8pts)
-                let cellWidth: CGFloat = (proxy.size.width - (8 * 2)) / 3
+                let cellWidth: CGFloat = (proxy.size.width - (8 * 4)) / 3
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         ForEach(CameraTrajectory.allCases) { trajectory in
@@ -14,9 +14,9 @@ struct CameraControls: View {
                                 .frame(height: 134)
                         }
                     }
+                    .padding(8)
                 }
             }
-            .padding(8)
             .frame(height: 150)
             .background(Color("Background"))
             .mask(RoundedRectangle(cornerRadius: 20))

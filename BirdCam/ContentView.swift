@@ -5,7 +5,7 @@ struct ContentView: View {
         ZStack(alignment: .bottom) {
             Color.white
             RadialGradient(gradient: Gradient(colors: [
-                .black.opacity(0.7),
+                .black.opacity(0.75),
                 .black
             ]), center: .center, startRadius: 100, endRadius: 800)
 
