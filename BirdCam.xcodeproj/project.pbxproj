@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1FB428064147006B07C2 /* TopNavView.swift */; };
 		FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */; };
+		FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9AC9BE28066A7D003CF483 /* TabBarView.swift */; };
 		FFF2EDB628060C3800988B44 /* BirdCamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB528060C3800988B44 /* BirdCamApp.swift */; };
 		FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EDB728060C3800988B44 /* ContentView.swift */; };
 		FFF2EDBA28060C4000988B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2EDB928060C4000988B44 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		FF2F1FB428064147006B07C2 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 		FF2F1FB628064339006B07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTrajectoryButtonView.swift; sourceTree = "<group>"; };
+		FF9AC9BE28066A7D003CF483 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		FFF2EDB228060C3800988B44 /* BirdCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2EDB528060C3800988B44 /* BirdCamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCamApp.swift; sourceTree = "<group>"; };
 		FFF2EDB728060C3800988B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				FF2F1FB628064339006B07C2 /* Info.plist */,
 				FFF2EDCC280615E300988B44 /* Helpers */,
 				FFF2EDC92806157300988B44 /* CameraView */,
+				FF9AC9BE28066A7D003CF483 /* TabBarView.swift */,
 				FFF2EDB728060C3800988B44 /* ContentView.swift */,
 				FFF2EDB528060C3800988B44 /* BirdCamApp.swift */,
 				FFF2EDB928060C4000988B44 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 			files = (
 				FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */,
 				FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */,
+				FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */,
 				FFF2EDC82806104E00988B44 /* Styles.swift in Sources */,
 				FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */,
 				FFF2EDC428060D1700988B44 /* CameraControls.swift in Sources */,
