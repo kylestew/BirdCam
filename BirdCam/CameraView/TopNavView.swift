@@ -13,7 +13,7 @@ struct TopNavView: View {
 
             Spacer()
 
-            Text("Bird")
+            Text("Not a Bird")
                 .font(.system(size: 17))
                 .fontWeight(.semibold)
 

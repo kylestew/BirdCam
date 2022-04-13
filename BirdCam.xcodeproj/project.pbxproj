@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F1FB428064147006B07C2 /* TopNavView.swift */; };
 		FF3540492807118400E23A05 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3540482807118400E23A05 /* Extensions.swift */; };
+		FF35404C280717FB00E23A05 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35404B280717FB00E23A05 /* Renderer.swift */; };
+		FF35404E2807180200E23A05 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35404D2807180200E23A05 /* MetalView.swift */; };
+		FF3540502807180900E23A05 /* MatrixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35404F2807180900E23A05 /* MatrixUtils.swift */; };
+		FF3540522807181300E23A05 /* rubber_toy.obj in Resources */ = {isa = PBXBuildFile; fileRef = FF3540512807181300E23A05 /* rubber_toy.obj */; };
+		FF3540552807183600E23A05 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF3540542807183600E23A05 /* Shaders.metal */; };
+		FF3540572807189300E23A05 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3540562807189300E23A05 /* Scene.swift */; };
 		FF41857328068DF1001A1FBA /* RotationalSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41857228068DF1001A1FBA /* RotationalSliderView.swift */; };
 		FF6B27E928061A28006E4D02 /* CameraTrajectoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */; };
 		FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9AC9BE28066A7D003CF483 /* TabBarView.swift */; };
@@ -26,6 +32,12 @@
 		FF2F1FB428064147006B07C2 /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 		FF2F1FB628064339006B07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF3540482807118400E23A05 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF35404B280717FB00E23A05 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		FF35404D2807180200E23A05 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		FF35404F2807180900E23A05 /* MatrixUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixUtils.swift; sourceTree = "<group>"; };
+		FF3540512807181300E23A05 /* rubber_toy.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rubber_toy.obj; sourceTree = "<group>"; };
+		FF3540542807183600E23A05 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		FF3540562807189300E23A05 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		FF41857228068DF1001A1FBA /* RotationalSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationalSliderView.swift; sourceTree = "<group>"; };
 		FF6B27E828061A28006E4D02 /* CameraTrajectoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTrajectoryButtonView.swift; sourceTree = "<group>"; };
 		FF9AC9BE28066A7D003CF483 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -51,6 +63,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF35404A280717EF00E23A05 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				FF3540542807183600E23A05 /* Shaders.metal */,
+				FF3540562807189300E23A05 /* Scene.swift */,
+				FF35404D2807180200E23A05 /* MetalView.swift */,
+				FF35404B280717FB00E23A05 /* Renderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		FF3540532807181500E23A05 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF3540512807181300E23A05 /* rubber_toy.obj */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FFC5D70528066FDF000883D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +111,8 @@
 			children = (
 				FF2F1FB628064339006B07C2 /* Info.plist */,
 				FFF2EDCC280615E300988B44 /* Helpers */,
+				FF3540532807181500E23A05 /* Assets */,
+				FF35404A280717EF00E23A05 /* Renderer */,
 				FFC5D70528066FDF000883D5 /* Models */,
 				FFF2EDC92806157300988B44 /* CameraView */,
 				FF9AC9BE28066A7D003CF483 /* TabBarView.swift */,
@@ -115,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF2EDC72806104E00988B44 /* Styles.swift */,
+				FF35404F2807180900E23A05 /* MatrixUtils.swift */,
 				FF3540482807118400E23A05 /* Extensions.swift */,
 			);
 			path = Helpers;
@@ -179,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF2EDBD28060C4000988B44 /* Preview Assets.xcassets in Resources */,
+				FF3540522807181300E23A05 /* rubber_toy.obj in Resources */,
 				FFF2EDBA28060C4000988B44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,8 +229,13 @@
 				FFF2EDB828060C3800988B44 /* ContentView.swift in Sources */,
 				FF41857328068DF1001A1FBA /* RotationalSliderView.swift in Sources */,
 				FF9AC9BF28066A7D003CF483 /* TabBarView.swift in Sources */,
+				FF3540572807189300E23A05 /* Scene.swift in Sources */,
+				FF3540502807180900E23A05 /* MatrixUtils.swift in Sources */,
+				FF35404E2807180200E23A05 /* MetalView.swift in Sources */,
+				FF35404C280717FB00E23A05 /* Renderer.swift in Sources */,
 				FFC5D70728066FEC000883D5 /* AppState.swift in Sources */,
 				FFF2EDC82806104E00988B44 /* Styles.swift in Sources */,
+				FF3540552807183600E23A05 /* Shaders.metal in Sources */,
 				FF2F1FB528064147006B07C2 /* TopNavView.swift in Sources */,
 				FFF2EDC428060D1700988B44 /* CameraControls.swift in Sources */,
 				FFF2EDCB2806158E00988B44 /* CameraView.swift in Sources */,

@@ -9,11 +9,8 @@ struct ContentView: View {
                 .black
             ]), center: .center, startRadius: 100, endRadius: 800)
 
-            // TODO: render view goes behind everything
-            Image("bird")
-                .frame(maxHeight: .infinity)
-                .offset(y: -90)
-
+            MetalView()
+            
             LinearGradient(gradient: Gradient(colors: [
                 .black.opacity(0),
                 .black.opacity(0.9),

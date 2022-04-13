@@ -12,6 +12,7 @@ struct CameraView: View {
             Spacer()
 
             RotationalSliderView()
+                .offset(y: 60)
 
             Spacer()
 

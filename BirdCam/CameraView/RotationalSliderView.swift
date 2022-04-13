@@ -20,7 +20,7 @@ struct RotationalSliderView: View {
             .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
             .padding(.horizontal, 14)
             .padding(.vertical, 16)
-            .background(Color.red.opacity(abs(appState.rotationVelocity) / 3.0))
+            .background(Color.red.opacity(abs(appState.rotationVelocity) / 2.0))
             .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 12))
             .roundedCornerStyle(cornerRadius: 12)
             .opacity(0.9)
